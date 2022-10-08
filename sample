@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+    int a,t,b
+    clrscr();
+    printf("Enter Amount:");
+    scanf("%d",&a);
+    printf("Number of Tickets");
+    scanf("%d",&t);
+    if(a/5==0)
+    {
+        if(a<=t*5)
+        {
+        printf("Print the Ticket");
+        b=a(t*5);
+        printf("Balance amount=%d",b);
+    }
+    else if(a>=t*5)
+    {
+        printf("Not Enough Amount:");
+    }
+    else
+    {
+        printf("Invalid Amount:");
+    }
+    getch();
+    return 0;
+}
